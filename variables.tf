@@ -54,6 +54,7 @@ variable "filters" {
     filter3 = { description = "Block SY", expression = "(ip.geoip.country eq \"SY\")", action = "block", priority = 103 }
     filter4 = { description = "Block Opera", expression = "(http.user_agent eq \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 OPR/73.0.3856.344\")", action = "block", priority = 104 }
     filter5 = { description = "Method Get", expression = "(http.request.method eq \"GET\")", action = "allow", priority = 105 }
+    filter6 = { description = "Block AF", expression = "(ip.geoip.country eq \"AF\")", action = "block", priority = 106 }
   }
 }
 
