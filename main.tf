@@ -24,6 +24,19 @@ terraform {
 }
 
 
+# Configure Backend
+terraform {
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "sauravmitra-training"
+
+    workspaces {
+      name = "dbs_cloudflare"
+    }
+  }
+}
+
+
 # Configure Cloudflare Provider
 # https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs
 # $ export CLOUDFLARE_EMAIL="john.doe@example.com"

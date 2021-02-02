@@ -4,17 +4,17 @@
 # https://www.terraform.io/docs/configuration/variables.html
 
 # Cloudflare Provider
-variable "cloudflare_email" {
-  description = "The email associated with the Cloudflare account."
-}
+# variable "cloudflare_email" {
+#   description = "The email associated with the Cloudflare account."
+# }
 
-variable "cloudflare_api_key" {
-  description = "The Cloudflare API key."
-}
+# variable "cloudflare_api_key" {
+#   description = "The Cloudflare API key."
+# }
 
-variable "cloudflare_account_id" {
-  description = "The Cloudflare Account ID."
-}
+# variable "cloudflare_account_id" {
+#   description = "The Cloudflare Account ID."
+# }
 
 variable "cloudflare_logging" {
   description = "Print logs from the API client."
