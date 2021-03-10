@@ -18,7 +18,7 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 2.17.0"
+      version = "2.18.0"
     }
   }
 }
@@ -69,7 +69,7 @@ resource "cloudflare_zone_settings_override" "site_settings" {
   zone_id = cloudflare_zone.site.id
   settings {
     always_online            = "on"
-    always_use_https         = "on"
+    always_use_https         = "off"
     automatic_https_rewrites = "off"
     brotli                   = "on"
     browser_cache_ttl        = 0
@@ -124,9 +124,9 @@ resource "cloudflare_zone_settings_override" "site_settings" {
     # true_client_ip_header = "off"
     universal_ssl = "off"
     waf           = "on"
-    # webp                        = "off"
-    websockets = "on"
-    zero_rtt   = "off"
+    webp          = "off"
+    websockets    = "on"
+    zero_rtt      = "off"
   }
 }
 
