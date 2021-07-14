@@ -28,7 +28,7 @@ terraform {
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "sauravmitra-training"
+    organization = "saurav-dev"
 
     workspaces {
       name = "dbs_cloudflare"
